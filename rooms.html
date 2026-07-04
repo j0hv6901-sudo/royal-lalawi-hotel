@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Reviews | Royale Lalawi Hotel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-wide text-amber-800 uppercase">Royale Lalawi</span>
+                <span class="text-xs text-gray-500 tracking-widest uppercase">Rooms & Lodging</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="hover:text-amber-700 transition">Home</a>
+                <a href="rooms.html" class="text-amber-700">Rooms & Suites</a>
+                <a href="amenities.html" class="hover:text-amber-700 transition">Facilities & Corporate</a>
+            </nav>
+            <div>
+                <button onclick="window.location.href='index.html#bookingModal'" class="bg-amber-800 text-white px-4 py-2 rounded text-xs font-bold hover:bg-amber-900 cursor-pointer">Book Room</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">Spatial Configurations & Utility</h1>
+            <p class="text-sm text-gray-500 mt-2">30 rooms distributed intelligently across a seven-floor vertical footprint optimized for mountainous valley contexts.</p>
+        </div>
+
+        <!-- Room Inventory Segment -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white border rounded-xl overflow-hidden shadow-sm">
+                <img src="248094.jpg" alt="Deluxe and Executive Double Room Setup" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Deluxe & Executive Double Series</h3>
+                    <p class="text-sm text-gray-600 mb-4">300 Sq. Ft. configurations optimized with customized soundproof walls, individual air conditioning, carpeted flooring, satellite flat-screen TVs, and electronic safe panels.</p>
+                    <span class="text-amber-800 font-bold text-sm">Nightly baseline starting from ₹2,086 to ₹3,208</span>
+                </div>
+            </div>
+
+            <div class="bg-white border rounded-xl overflow-hidden shadow-sm">
+                <img src="248086.jpg" alt="Executive Deluxe Twin Bed Layout" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Executive Deluxe Twin Configuration</h3>
+                    <p class="text-sm text-gray-600 mb-4">Featuring dual twin single-bed architectures alongside elevated cityscape viewing panels. Includes dedicated work desks and exclusive executive lounge clearance permissions.</p>
+                    <span class="text-gray-500 text-xs">Subject to seasonal volume fluctuations</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Room Review Form Segment -->
+        <section class="bg-stone-900 text-white rounded-xl p-8 max-w-3xl mx-auto shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-amber-400"><i class="fa-solid fa-pen-to-square mr-2"></i>Leave a Guest Experience Review</h3>
+            <p class="text-xs text-stone-400 mb-6">Your data analytics are evaluated directly by hotel operations to resolve service bottlenecks.</p>
+            
+            <form class="space-y-4 text-xs text-stone-800" onsubmit="alert('Thank you for your rating! Your review is queued for municipal quality logs.'); this.reset(); return false;">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-stone-300 font-semibold mb-1">Guest Verified Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full p-2.5 rounded bg-white border border-stone-700" required>
+                    </div>
+                    <div>
+                        <label class="block text-stone-300 font-semibold mb-1">Room Classification Occupied</label>
+                        <select class="w-full p-2.5 rounded bg-white border border-stone-700">
+                            <option>Deluxe Suite Category</option>
+                            <option>Executive Series</option>
+                            <option>Presidential Layout</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-semibold mb-1">Star Performance Metric</label>
+                    <select class="w-full p-2.5 rounded bg-white border border-stone-700 font-bold text-amber-700">
+                        <option>⭐⭐⭐⭐⭐ - Fully Exceptional</option>
+                        <option>⭐⭐⭐⭐ - Highly Satisfactory</option>
+                        <option>⭐⭐⭐ - Standard Operational Baseline</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-semibold mb-1">Critical Review Commentary</label>
+                    <textarea rows="3" placeholder="Provide specific operational details..." class="w-full p-2.5 rounded bg-white border border-stone-700" required></textarea>
+                </div>
+                <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-2 rounded transition cursor-pointer">
+                    Submit Experience Log
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Complaint Engine -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/917005258554?text=IMMEDIATE%20COMPLAINT%3A%20Please%20connect%20me%20to%20the%20Royale%20Lalawi%20Duty%20Manager." 
+           target="_blank" 
+           class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition">
+            <i class="fa-solid fa-headset"></i>
+            <span>Log Instant Complaint</span>
+        </a>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-xs">
+        <p>&copy; 2026 Royale Lalawi Hotel | Check-In: 12:00 PM</p>
+    </footer>
+</body>
+</html>
+
