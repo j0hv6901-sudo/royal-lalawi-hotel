@@ -9,12 +9,10 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased relative">
 
-    <!-- Sunday Self-Sufficiency Alert -->
     <div class="bg-amber-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium">
         <i class="fa-solid fa-circle-info mr-2"></i> Sunday Operations Advisory: Internal dining, convenience grocery, and on-premise medical care remain fully active during regional weekend closures.
     </div>
 
-    <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex flex-col">
@@ -34,10 +32,9 @@
         </div>
     </header>
 
-    <!-- Hero Showcase featuring City Panorama -->
     <section class="relative bg-gray-900 text-white py-24 md:py-36 px-4 overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center opacity-50">
-            <img src="248102.jpg" alt="Aizawl Panoramic Landscape View" class="w-full h-full object-cover">
+            <img src="./248102.jpg" alt="Aizawl Panoramic Landscape View" class="w-full h-full object-cover">
         </div>
         <div class="relative max-w-5xl mx-auto text-center z-10 bg-black/30 p-8 rounded-xl backdrop-blur-xs">
             <span class="inline-block bg-amber-800 text-xs uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold">Established 2023</span>
@@ -51,7 +48,6 @@
         </div>
     </section>
 
-    <!-- Lobby & Core Parameters Section -->
     <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
@@ -64,12 +60,11 @@
                 </div>
             </div>
             <div>
-                <img src="248090.jpg" alt="Royale Lalawi Front Desk Reception Lobby" class="w-full rounded-xl shadow-lg border border-gray-200">
+                <img src="./248090.jpg" alt="Royale Lalawi Front Desk Reception Lobby" class="w-full rounded-xl shadow-lg border border-gray-200">
             </div>
         </div>
     </section>
 
-    <!-- Guest Reviews Module -->
     <section class="bg-gray-100 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -96,44 +91,39 @@
         </div>
     </section>
 
-    <!-- Direct Booking Engine Modal Template -->
     <div id="bookingModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
         <div class="bg-white rounded-xl shadow-2xl max-w-md w-full overflow-hidden border">
             <div class="bg-amber-800 text-white p-4 flex justify-between items-center">
                 <h3 class="font-bold text-lg"><i class="fa-solid fa-hotel mr-2"></i>Direct Booking Engine</h3>
                 <button onclick="toggleBookingModal()" class="text-white hover:text-amber-200 text-xl cursor-pointer">&times;</button>
             </div>
-            <form class="p-6 space-y-4 text-sm" onsubmit="alert('Redirecting to secure processing hub...'); return false;">
+            <form class="p-6 space-y-4 text-sm" onsubmit="redirectToWhatsApp(event)">
                 <div>
                     <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Check-In Date</label>
-                    <input type="date" class="w-full border p-2 rounded focus:outline-amber-850" required>
+                    <input type="date" id="checkInDate" class="w-full border p-2 rounded focus:outline-amber-850" required>
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Room Tier</label>
-                    <select class="w-full border p-2 rounded focus:outline-amber-850">
-                        <option>Deluxe Double Room (From ₹2,086)</option>
-                        <option>Premium Hill View Double Room</option>
-                        <option>Executive Deluxe Series Suite</option>
-                        <option>Presidential Panoramic Suite</option>
+                    <select id="roomTier" class="w-full border p-2 rounded focus:outline-amber-850">
+                        <option value="Deluxe Double Room (From ₹2,086)">Deluxe Double Room (From ₹2,086)</option>
+                        <option value="Executive Deluxe Twin Configuration">Executive Deluxe Twin Configuration</option>
                     </select>
                 </div>
                 <button type="submit" class="w-full bg-amber-800 text-white font-bold py-2.5 rounded hover:bg-amber-900 transition cursor-pointer">
-                    Verify Rates & Reserve Space
+                    Verify Rates & Book via WhatsApp
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- Floating WhatsApp Complaint & Escalation Trigger -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
-        <!-- Direct Escalation Tooltip Label -->
-        <a href="https://wa.me/917005258554?text=URGENT%20COMPLAINT%3A%20I%20am%20requesting%20immediate%20operational%20desk%20support%20at%20Royale%20Lalawi." 
+        <a href="https://wa.me/916909158272?text=URGENT%20COMPLAINT%3A%20I%20am%20requesting%20immediate%20operational%20desk%20support%20at%20Royale%20Lalawi." 
            target="_blank" 
            class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition transform hover:scale-105">
             <i class="fa-solid fa-headset text-sm"></i>
             <span>24/7 Complaint Desk</span>
         </a>
-        <a href="https://wa.me/919233732727?text=Hello%20Royale%2520Lalawi%20Hotel%2C%20I%20would%20like%20to%20instantly%20book%20a%20room." 
+        <a href="https://wa.me/916909158272?text=Hello%20Royale%20Lalawi%20Hotel%2C%20I%20would%20like%20to%20instantly%20book%20a%20room." 
            target="_blank" 
            class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition transform hover:scale-105">
             <i class="fa-brands fa-whatsapp text-base"></i>
@@ -141,15 +131,22 @@
         </a>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 text-center text-xs border-t border-gray-800">
-        <p>&copy; 2026 Royale Lalawi Hotel, Khatla North, Aizawl, Mizoram. Municipal License ID: AMC/14/06340/201.</p>
+        <p>&copy; 2026 Royale Lalawi Hotel, Khatla North, Aizawl, Mizoram. Main Desk Contact: +91 6909158272</p>
     </footer>
 
     <script>
         function toggleBookingModal() {
             const modal = document.getElementById('bookingModal');
             modal.classList.toggle('hidden');
+        }
+
+        function redirectToWhatsApp(event) {
+            event.preventDefault();
+            const date = document.getElementById('checkInDate').value;
+            const tier = document.getElementById('roomTier').value;
+            const text = encodeURIComponent(`Hello Royale Lalawi Hotel, I would like to book the ${tier} starting on ${date}. Please verify current room availability.`);
+            window.open(`https://wa.me/916909158272?text=${text}`, '_blank');
         }
     </script>
 </body>
