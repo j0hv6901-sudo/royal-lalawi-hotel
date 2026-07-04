@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royale Lalawi Hotel | Welcome</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased relative">
+
+    <!-- Sunday Self-Sufficiency Alert -->
+    <div class="bg-amber-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium">
+        <i class="fa-solid fa-circle-info mr-2"></i> Sunday Operations Advisory: Internal dining, convenience grocery, and on-premise medical care remain fully active during regional weekend closures.
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-wide text-amber-800 uppercase">Royale Lalawi</span>
+                <span class="text-xs text-gray-500 tracking-widest uppercase">Aizawl, Mizoram</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="text-amber-700">Home</a>
+                <a href="rooms.html" class="hover:text-amber-700 transition">Rooms & Suites</a>
+                <a href="amenities.html" class="hover:text-amber-700 transition">Facilities & Corporate</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleBookingModal()" class="bg-amber-800 hover:bg-amber-900 text-white px-5 py-2.5 rounded-md text-sm font-semibold transition cursor-pointer">
+                    <i class="fa-solid fa-calendar-check mr-2"></i>Direct Booking
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase featuring City Panorama -->
+    <section class="relative bg-gray-900 text-white py-24 md:py-36 px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50">
+            <img src="248102.jpg" alt="Aizawl Panoramic Landscape View" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-5xl mx-auto text-center z-10 bg-black/30 p-8 rounded-xl backdrop-blur-xs">
+            <span class="inline-block bg-amber-800 text-xs uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold">Established 2023</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">A Self-Sufficient Urban Retreat</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+                Engineered to handle the unique topographical and administrative infrastructure of Northeast India.
+            </p>
+            <button onclick="toggleBookingModal()" class="mt-6 inline-block bg-amber-700 hover:bg-amber-800 text-white font-bold px-8 py-3 rounded-lg shadow transition transform hover:scale-105 cursor-pointer">
+                Check Room Availability
+            </button>
+        </div>
+    </section>
+
+    <!-- Lobby & Core Parameters Section -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-gray-900">Strategic Positioning & Front Office</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Situated at A-7 Khatla North, Aizawl, the hotel places you within 0.3 kilometers of critical administrative hubs like the Assam Rifles 23 Sector Headquarters. 
+                </p>
+                <div class="bg-amber-50 border-l-4 border-amber-700 p-4 rounded-r-lg text-sm text-amber-900">
+                    <strong>Architectural Mitigations:</strong> Due to mountain slope grading, our elevator system begins at the lobby level up two flights of stairs. Dedicated porter staff are permanently stationed at the street level to manage full luggage transfers.
+                </div>
+            </div>
+            <div>
+                <img src="248090.jpg" alt="Royale Lalawi Front Desk Reception Lobby" class="w-full rounded-xl shadow-lg border border-gray-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Reviews Module -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">What Our Guests Say</h2>
+                <p class="text-gray-600 mt-2">Verified guest feedback regarding operational continuity and regional comfort.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border shadow-xs">
+                    <div class="flex text-amber-500 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-sm text-gray-600 italic">"The room soundproofing and views were spectacular. Having separate certified dining areas was a massive operational benefit for our international travelers."</p>
+                    <span class="block mt-4 text-xs font-bold text-gray-900">— Corporate Delegate</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl border shadow-xs">
+                    <div class="flex text-amber-500 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-sm text-gray-600 italic">"Aizawl completely closes on Sundays, but the hotel restaurant and grocery service kept our family completely safe and well-fed without stress."</p>
+                    <span class="block mt-4 text-xs font-bold text-gray-900">— Holiday Traveler</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl border shadow-xs">
+                    <div class="flex text-amber-500 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="text-sm text-gray-600 italic">"Stairs at the entrance are tough, but the bellboys were waiting at the street level and carried up our heavy luggage before we even asked!"</p>
+                    <span class="block mt-4 text-xs font-bold text-gray-900">— Leisure Tour Unit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Booking Engine Modal Template -->
+    <div id="bookingModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full overflow-hidden border">
+            <div class="bg-amber-800 text-white p-4 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-hotel mr-2"></i>Direct Booking Engine</h3>
+                <button onclick="toggleBookingModal()" class="text-white hover:text-amber-200 text-xl cursor-pointer">&times;</button>
+            </div>
+            <form class="p-6 space-y-4 text-sm" onsubmit="alert('Redirecting to secure processing hub...'); return false;">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Check-In Date</label>
+                    <input type="date" class="w-full border p-2 rounded focus:outline-amber-850" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Room Tier</label>
+                    <select class="w-full border p-2 rounded focus:outline-amber-850">
+                        <option>Deluxe Double Room (From ₹2,086)</option>
+                        <option>Premium Hill View Double Room</option>
+                        <option>Executive Deluxe Series Suite</option>
+                        <option>Presidential Panoramic Suite</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-amber-800 text-white font-bold py-2.5 rounded hover:bg-amber-900 transition cursor-pointer">
+                    Verify Rates & Reserve Space
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Complaint & Escalation Trigger -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Direct Escalation Tooltip Label -->
+        <a href="https://wa.me/917005258554?text=URGENT%20COMPLAINT%3A%20I%20am%20requesting%20immediate%20operational%20desk%20support%20at%20Royale%20Lalawi." 
+           target="_blank" 
+           class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition transform hover:scale-105">
+            <i class="fa-solid fa-headset text-sm"></i>
+            <span>24/7 Complaint Desk</span>
+        </a>
+        <a href="https://wa.me/919233732727?text=Hello%20Royale%2520Lalawi%20Hotel%2C%20I%20would%20like%20to%20instantly%20book%20a%20room." 
+           target="_blank" 
+           class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition transform hover:scale-105">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Book via WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-xs border-t border-gray-800">
+        <p>&copy; 2026 Royale Lalawi Hotel, Khatla North, Aizawl, Mizoram. Municipal License ID: AMC/14/06340/201.</p>
+    </footer>
+
+    <script>
+        function toggleBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
